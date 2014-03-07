@@ -1,9 +1,11 @@
 django-extensions
-Django>=1.4.10
+Django=1.5
 vobject
 chardet
 surlex>=0.2.0
 sorl-thumbnail
+pytz
+django-tinymce
 
 # Test requirements
 webtest
