@@ -4,14 +4,11 @@ import os.path
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "aschobba@googlemail.com"
-EMAIL_HOST_PASSWORD = ""
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'mail.hhi.fraunhofer.de'
+EMAIL_PORT = 25
 
 NEWSLETTER_CONFIRM_EMAIL = False
-NEWSLETTER_RICHTEXT_WIDGET = "tinymce.widgets.TinyMCE"
+NEWSLETTER_RICHTEXT_WIDGET = "imperavi.widget.ImperaviWidget"
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -43,7 +40,7 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'de-DE'
 
 SITE_ID = 1
 
@@ -139,7 +136,7 @@ INSTALLED_APPS = (
     'django_extensions',
     'sorl.thumbnail',
     'newsletter',
-    'tinymce',
+    'imperavi',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

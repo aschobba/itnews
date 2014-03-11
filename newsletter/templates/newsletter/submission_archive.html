@@ -5,17 +5,33 @@
 {% block title %}{% trans "Newsletter archive" %}{% endblock title %}
 
 {% block body %}
-<table>
-    <tr>
-        <th>{% trans "Newsletter archive" %} {{ newsletter.title }}</th>
-    </tr>
-    {% for submission in latest %}
-    <tr>
-        <td><a href="{{ submission.get_absolute_url }}">{{ submission }}</a></td>
-    </tr>
-    {% endfor %}
-    <tr>
-        <td><a href="../">Back to list</a></td>
-    </tr>
-</table>
+
+ <div class="navbar navbar-inverse" id="navbar-top">
+      <div class="navbar-inner">
+        <div class="container">
+         <span class="brand">{{ newsletter.title }} - {% trans "Newsletter archive" %}</span></a>  
+		<ul class="nav pull-right">
+		<a href="../" class="btn"> Back to {{ newsletter.title }}</a>
+      	  </ul>        
+        </div>
+      </div>
+    </div>
+
+
+<div class="container">
+      <div class="content">
+        <div class="frontpage-box">
+  <div class="inner">
+
+<ul class="nav nav-pills nav-stacked">
+	{% for submission in latest %}
+  <li><a href="{{ submission.get_absolute_url }}">{{ submission }}</a></li>
+	{% endfor %}
+</ul>
+      </div>
+      </div>
+    </div>
+ 
+</div>
+
 {% endblock body %}

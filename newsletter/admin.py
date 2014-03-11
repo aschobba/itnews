@@ -73,6 +73,7 @@ class NewsletterAdmin(admin.ModelAdmin):
     admin_submissions.short_description = ''
 
 
+
 class SubmissionAdmin(admin.ModelAdmin, ExtendibleModelAdminMixin):
     form = SubmissionAdminForm
     list_display = (

@@ -33,6 +33,14 @@ class Newsletter(models.Model):
         max_length=200, verbose_name=_('newsletter title')
     )
     slug = models.SlugField(db_index=True, unique=True)
+    
+    shortinfo = models.TextField(
+        max_length=200, verbose_name=_('newsletter shortinfo')
+    )
+
+    information = models.TextField(
+        verbose_name=_('newsletter information')
+    )
 
     email = models.EmailField(
         verbose_name=_('e-mail'), help_text=_('Sender e-mail')
