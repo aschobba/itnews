@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 django-extensions==1.3.3
 Django=1.5
 chardet
@@ -8,6 +9,16 @@ surlex==0.2.0
 vobject==0.8.1c
 
 
+=======
+django-extensions
+Django=1.5
+vobject
+chardet
+surlex>=0.2.0
+sorl-thumbnail
+pytz
+django-tinymce
+>>>>>>> 4e80a12ff13263b7f05bd4b30e5f108c0e4395b9
 
 # Test requirements
 webtest
